@@ -1,29 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="ePages logo" src="./assets/epages.png">
-    <h2>Welcome to the BEYOND vue.js Starter!</h2>
-    <ul>
-      <li><router-link to="/">login</router-link></li>
-      <li><router-link to="/products">products</router-link></li>
-    </ul>
-
-    <router-view></router-view>
+  <div id="app" class="container">
+    <NavBar/>
+    <transition name="fade">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
 <script>
+/* eslint-disable */
+import NavBar from "@/components/NavBar";
+
 export default {
-  name: "app"
+  name: "App",
+
+  components: {
+    NavBar
+  }
 };
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.piggy-bank {
+  color: lightpink !important;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

@@ -1,5 +1,5 @@
 {
-  "name": "beyond-vuejs-starter",
+  "name": "piggy-bank",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,13 +14,20 @@
     "yarn": "1.9.4"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.4",
+    "@fortawesome/free-brands-svg-icons": "^5.3.1",
+    "@fortawesome/free-regular-svg-icons": "^5.3.1",
+    "@fortawesome/free-solid-svg-icons": "^5.3.1",
+    "@fortawesome/vue-fontawesome": "^0.1.1",
     "axios": "^0.18.0",
+    "bootstrap-vue": "^2.0.0-rc.11",
     "express": "^4.16.3",
     "lodash": "^4.17.10",
     "numeral": "^2.0.6",
     "uri-templates": "^0.2.0",
     "vue": "^2.5.17",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue2-storage": "^3.3.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.1",
